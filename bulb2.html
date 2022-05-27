@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?fwasily=Inconsolata:wght@300&display=swap" rel="stylesheet"> 
+    <title>making an on off bulb</title>
+    <style>
+      *{
+          margin: 0; 
+          padding: 0;
+          box-sizing: border-box;  
+        }
+        .container{
+            padding-top: 125px;
+            background: rgb(52, 52, 148);
+            height: 100vh;
+            text-align: center;
+            font-family: 'Inconsolata', monospace;
+        }
+        h1{
+            text-align: center;
+            color: #fff;
+        }
+        img{
+            height: 120px;
+            display: block;
+            margin: 15px auto;
+        }
+        button{
+            background: rgb(253, 253, 0);
+            padding: 8px;
+            text-align: center;
+            font-size: 16px;
+            border: 2px solid transparent;
+            border-radius: 9px;
+            /* margin: 15px; */
+            margin: 0px 55px;
+            
+
+        }
+button:active{
+    background: red;    
+    color: white;        
+        }
+        @media only  screen and (max-width:500px) {
+            h1{
+                font-size: 28px;
+            }
+            button{
+                width: 114px;
+            }
+        }
+        @media only  screen and (max-width:380px){
+            h1{
+                font-size: 24px;
+            }
+            button{
+                margin: 11px 55px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Can you turn the bulb on ?</h1>
+        <img src="off bulb.png" alt="" id="bulbimage">
+        <button onclick="document.getElementById('bulbimage').src= 'on image.png'">Turn the bulb on</button>
+        <button onclick="document.getElementById('bulbimage').src= 'off bulb.png'">Turn the bulb off</button>
+    </div>
+</body>
+</html>
